@@ -1,51 +1,43 @@
+@charset "UTF-8";
 @font-face { /*font-face ingresas una fuente nueva*/
-    font-family: "LetraNueva" ;
-    src: url(../assets/Fonts/Invologium-Regular.ttf);
+  font-family: "LetraNueva";
+  src: url(../assets/Fonts/Invologium-Regular.ttf);
+}
+/* body */
+body {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
 }
 
-
-  /* body */
-  body{
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-  }
-
-
-  .logoIndex{
-    width: 3em;
-  }
-
-  /* HEADER */
-header form{
-  background-color:#bbc2cc;
+.logoIndex {
+  width: 3em;
 }
 
-header{
-  background-color:#23282e ;
-  color: #FFFFFF;
+/* HEADER */
+header {
+  background-color: #23282e;
+  color: #ffffff;
+}
+header form {
+  background-color: #bbc2cc;
 }
 
-
-.logoPie{
+.logoPie {
   width: 1em;
 }
 
-
-
 /* MAIN */
 main {
-background-color: #ffffff;
-color: #23282e;
+  background-color: #ffffff;
+  color: #23282e;
+}
+main a {
+  text-decoration: none; /* le quita la propiedad fuente a los enlaces*/
+  color: #23282e;
 }
 
-main a { 
-text-decoration: none; /* le quita la propiedad fuente a los enlaces*/ 
-color: #23282e;
-}
-
-
-.mainTituloH1, .mainTituloH2{
+.mainTituloH1, .mainTituloH2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,124 +46,86 @@ color: #23282e;
   text-transform: uppercase;
   min-height: 75px;
 }
- 
-.main__productos-destacados img, .main__novedades img, .main__nuevos-productos img {
 
-  width: 300px;
+.main__productos-destacados img, .main__novedades img, .main__nuevos-productos img {
   height: 300px;
+  width: 300px;
 }
 
 ul {
-list-style-type: none;
+  list-style-type: none;
 }
-
-
-
 
 /* FOOTHER */
-footer{
-background-color:#918989;
-color: #23282e;
+footer {
+  background-color: #bbc2cc;
+  color: #23282e;
+}
+footer a {
+  text-decoration: none; /* le quita la propiedad fuente a los enlaces*/
+  color: #23282e;
+}
+footer ul, footer ul {
+  list-style-type: none;
 }
 
-footer a { 
-text-decoration: none; /* le quita la propiedad fuente a los enlaces*/ 
-color: #23282e;
-}
-
-footer ul, ul {
-list-style-type: none;
-}
-
-
-/* 
-
-
-#23282e
-#FFFFFF
-#bbc2cc
-#ae9368
- */
-
-.bannerInferiorPF , .bannerInferiorEnvios{
+.bannerInferiorPF, .bannerInferiorEnvios {
   display: none;
 }
 
-
-main{
-
+main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto);
+  gap:   2rem;
   justify-items: center;
 }
 
-.main__novedades, .main__productos-destacados, .main__nuevos-productos{
+.main__novedades, .main__productos-destacados, .main__nuevos-productos {
   display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto);
+  gap:   2rem;
   justify-content: space-around;
   align-content: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: (repeat(auto));
 }
 
-
-.indexProductos{
-
+.indexProductos {
   display: grid;
-  grid-template-columns: 1fr ;
-  gap: 1em;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto);
+  gap:   1em;
   align-content: center;
-  
 }
 
-
-
-.footer__extra{
-
+.footer__extra {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto);
+  gap:   0;
 }
-
-
-
-
-
-
 
 @media screen and (min-width: 768px) {
-
-  .indexProductos{
-
+  .indexProductos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     align-content: center;
-    
   }
-
-  .footer__extra{
-
+  .footer__extra {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-
 }
-
-
 @media screen and (min-width: 992px) {
-
-  .indexProductos{
-
+  .indexProductos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1em;
     align-content: center;
-    
   }
-
-  .footer__extra{
-
+  .footer__extra {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
+}/*# sourceMappingURL=style.css.map */
